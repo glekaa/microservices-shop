@@ -30,4 +30,3 @@ class ProfileUpdateView(generics.UpdateAPIView):
     def get_object(self):
         profile, created = UserProfile.objects.get_or_create(user=self.request.user)
         return profile
-    
